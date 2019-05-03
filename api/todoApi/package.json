@@ -1,0 +1,16 @@
+{
+  "name": "todo-api",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "scripts": {
+    "lint": "npx eslint ./",
+    "build": "tsc -b .",
+    "test": "npx jest",
+    "test:watch": "npx jest --watch"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@laurell/shared": "1.0.0"
+  }
+}

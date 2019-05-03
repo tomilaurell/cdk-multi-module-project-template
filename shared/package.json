@@ -1,0 +1,22 @@
+{
+  "name": "@laurell/shared",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "scripts": {
+    "lint": "npx eslint ./",
+    "build": "tsc -b .",
+    "test": "npx jest",
+    "test:watch": "npx jest --watch"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "8.10.25",
+    "@types/lodash": "4.14.123",
+    "aws-sdk": "2.448.0",
+    "jest-diff": "24.7.0",
+    "jest-matcher-utils": "24.7.0"
+  },
+  "dependencies": {
+    "lodash": "4.17.11"
+  }
+}

@@ -1,0 +1,63 @@
+ami.properties
+tmp/
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Intellij
+.idea/
+*.iml
+*.iws
+
+# Mac
+.DS_Store
+
+# Maven
+log/
+target/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage
+
+# nyc test coverage
+.nyc_output
+
+# Dependency directories
+node_modules/
+**/node_modules
+
+# Yarn in use, so npm lock file is ignored
+package-lock.json
+
+# Serverless build
+.serverless/
+.webpack/
+
+serverless.yml
+variables.yml
+
+# Typescript build
+dist/
+build/
+tsconfig.tsbuildinfo
+
+# VS code
+.history
+.vscode
+
+# NPM
+.npmrc
+
