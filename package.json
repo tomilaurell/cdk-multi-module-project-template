@@ -13,7 +13,11 @@
   "workspaces": {
     "packages": [
       "api/*",
-      "shared"
+      "shared",
+      "ui/*"
+    ],
+    "nohoist": [
+      "ui/*"
     ]
   },
   "devDependencies": {
@@ -24,7 +28,7 @@
     "@aws-cdk/aws-apigateway": "0.30.0",
     "@aws-cdk/cdk": "0.30.0",
     "aws-sdk": "2.448.0",
-    "cdk-infra-properties": "0.1.9",
+    "cdk-infra-properties": "0.2.0",
     "jest": "24.7.1",
     "jest-environment-jsdom": "24.7.1",
     "lerna": "3.13.4",
