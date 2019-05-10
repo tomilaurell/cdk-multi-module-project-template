@@ -1,15 +1,12 @@
 {
   "compilerOptions": {
+    "target": "ES2018",
+    "outDir": "dist",
     "module": "commonjs",
-    "target": "es5",
     "lib": ["es2017"],
     "moduleResolution": "node",
     "rootDir": ".",
     "baseUrl": ".",
-    "paths": {
-      "@org/*": ["./shared"],
-      "serverless-*": ["./hub/*/src", "./inbound/*/src", "./api/*/src"]
-    },
     "typeRoots": ["./node_modules/@types"],
     "noEmit": false,
     "declaration": true,
@@ -27,5 +24,6 @@
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
     "esModuleInterop": true
-  }
+  },
+  "exclude": ["node_modules", "dist", "ui"]
 }

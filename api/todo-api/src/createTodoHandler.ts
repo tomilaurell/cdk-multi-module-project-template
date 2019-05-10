@@ -1,4 +1,4 @@
-import { successResponse, LambdaResponse } from "@org/laurell";
+import { successResponse, LambdaResponse } from "@org/shared";
 
 const handler = async (event: any = {}): Promise<LambdaResponse> => {
   console.log("Received event", event);

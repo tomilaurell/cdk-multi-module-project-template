@@ -1,5 +1,5 @@
 import cdk = require("@aws-cdk/cdk");
-import { withInfraProperties } from "cdk-infra-properties";
+import { withInfraProperties, generateServerlessVariables, generateDotEnv } from "cdk-infra-properties";
 
 import NetworkStack from "./common-stacks/network";
 import TodoApiStack from "./api/todo-api/todo-api-stack";
@@ -18,11 +18,14 @@ async function createStacks() {
     }*/
   });
 
+  const apiStackPath = "./api/todo-api";
+  await generateServerlessVariables(apiStackPath);
+  await generateDotEnv(apiStackPath);
   await withInfraProperties({
     app,
     stack: TodoApiStack,
     stackName: "todo-api",
-    path: "./api/todo-api/todo-api-stack"
+    path: apiStackPath
   });
 
   return app;

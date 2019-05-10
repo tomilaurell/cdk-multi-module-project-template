@@ -1,5 +1,5 @@
 {
-  "name": "todo-api",
+  "name": "@org/todo-api",
   "version": "1.0.0",
   "license": "MIT",
   "main": "dist/index.js",
@@ -11,6 +11,6 @@
   },
   "devDependencies": {},
   "dependencies": {
-    "@laurell/shared": "1.0.0"
+    "@org/shared": "1.0.0"
   }
 }
