@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
+    "@types/styled-components": "^4.1.15",
     "serverless-single-page-app-plugin": "1.0.2"
   },
   "dependencies": {
@@ -13,7 +14,11 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.0",
-    "typescript": "3.4.5"
+    "sanitize.css": "4.1.0",
+    "styled-components": "4.2.0",
+    "typescript": "3.4.5",
+    "semantic-ui-css": "2.4.1",
+    "semantic-ui-react": "^0.87.1"
   },
   "scripts": {
     "start": "react-scripts start",
