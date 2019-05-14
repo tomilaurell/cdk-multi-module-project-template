@@ -19,14 +19,15 @@ async function createStacks() {
   });
 
   const apiStackPath = "./api/todo-api";
-  await generateServerlessVariables(apiStackPath);
-  await generateDotEnv(apiStackPath);
+  await generateDotEnv(app, apiStackPath);
   await withInfraProperties({
     app,
     stack: TodoApiStack,
     stackName: "todo-api",
     path: apiStackPath
   });
+
+  await generateServerlessVariables(app, "./ui/todo-ui");
 
   return app;
 }
