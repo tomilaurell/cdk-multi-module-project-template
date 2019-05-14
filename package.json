@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "build": "npm lerna run build",
-    "tsc": "tsc",
+    "build:root": "tsc",
     "cdk": "cdk",
     "test": "jest",
     "clean": "yarn clean:dist && yarn clean:modules",
@@ -16,8 +16,7 @@
     "packages": [
       "api/*",
       "shared",
-      "ui/*",
-      "infra"
+      "ui/*"
     ],
     "nohoist": [
       "ui/*"

@@ -1,29 +1,8 @@
 {
+  "extends": "./config/baseTsconfig.json",
   "compilerOptions": {
-    "target": "ES2018",
-    "outDir": "dist",
-    "module": "commonjs",
-    "lib": ["es2017"],
-    "moduleResolution": "node",
-    "rootDir": ".",
-    "baseUrl": ".",
-    "typeRoots": ["./node_modules/@types"],
-    "noEmit": false,
-    "declaration": true,
-    "composite": true,
-    "declarationMap": true,
-    "sourceMap": true,
-    "strict": true,
-    "noImplicitAny": true,
-    "noUnusedLocals": true,
-    "noImplicitThis": true,
-    "strictNullChecks": true,
-    "noImplicitReturns": true,
-    "preserveConstEnums": true,
-    "suppressImplicitAnyIndexErrors": true,
-    "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true,
-    "esModuleInterop": true
+    "outDir": "./dist",
+    "rootDir": "."
   },
-  "exclude": ["node_modules", "dist", "ui"]
+  "exclude": ["node_modules", "dist", "**/src"]
 }
