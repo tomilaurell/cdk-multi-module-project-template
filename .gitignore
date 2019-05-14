@@ -46,9 +46,6 @@ package-lock.json
 .serverless/
 .webpack/
 
-serverless.yml
-variables.yml
-
 # Typescript build
 dist/
 build/
