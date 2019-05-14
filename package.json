@@ -4,7 +4,9 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "build": "lerna run build",
+    "build": "npm lerna run build",
+    "build:root": "tsc",
+    "cdk": "cdk",
     "test": "jest",
     "clean": "yarn clean:dist && yarn clean:modules",
     "clean:dist": "find . -type d -name 'dist' -prune -exec rm -rf '{}' '+'",
@@ -13,7 +15,11 @@
   "workspaces": {
     "packages": [
       "api/*",
-      "shared"
+      "shared",
+      "ui/*"
+    ],
+    "nohoist": [
+      "ui/*"
     ]
   },
   "devDependencies": {
@@ -24,7 +30,7 @@
     "@aws-cdk/aws-apigateway": "0.30.0",
     "@aws-cdk/cdk": "0.30.0",
     "aws-sdk": "2.448.0",
-    "cdk-infra-properties": "0.1.9",
+    "cdk-infra-properties": "0.2.4",
     "jest": "24.7.1",
     "jest-environment-jsdom": "24.7.1",
     "lerna": "3.13.4",
@@ -35,7 +41,7 @@
     "tslint": "5.16.0",
     "tslint-config-prettier": "1.18.0",
     "typescript": "3.4.5",
-    "webpack": "4.30.0"
+    "webpack": "4.29.6"
   },
   "dependencies": {
     "lodash": "4.17.11",
